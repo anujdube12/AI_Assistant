@@ -1,0 +1,84 @@
+///////////////
+/// Phase I ///
+///////////////
+(Only Command Based)
+
+#Performing Math Calculations:
+-basic operations(eval)
+-square, root
+-bitwise(eval)
+-binary, decimal, hexadecimal, octal(eval)
+-trignometry
+
+#File Operations
+-create/delete folder
+-create a new file(py, txt, word, pptx, etc)
+-move files to folder
+
+#Simple Word Games
+-textbased (hangman)
+-flip a coin
+-rock paper scissor
+
+
+/////////////////
+/// Phase II ///
+/////////////////
+(Working with GUI, Chatting with Assistant)
+
+#Wishing, Date & Time
+
+#Register our name, DOB
+-from next time it will then know your name
+
+#What things he do?
+-provides the list of operations
+
+
+
+/////////////////
+/// Phase III ///
+/////////////////
+
+#Working with system apps
+-setting alarm and timer
+-open paint
+-play music/videos
+-play online video(YouTube)
+
+#Google Search Results
+-wikipedia
+-news
+-GK
+-jokes
+-stories, etc
+
+#Working with API's
+-calendar
+-weather
+-email
+-locations on Google Maps
+
+
+/////////////////
+/// Phase IV ///
+/////////////////
+
+#working on UI
+-animations and images
+
+#Assistant Reply
+-audio effects
+
+#Extra features
+-use of opencv for facial recognition
+
+
+
+
+
+
+
+
+t = threading.Thread(target=ob.speak, args=(text,))
+t.start()
