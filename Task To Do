@@ -7,13 +7,14 @@
 -basic operations(eval)
 -square, root
 -bitwise(eval)
--binary, decimal, hexadecimal, octal(eval)
+-binary, hexadecimal, octal(eval), for decimal use program
 -trignometry
 
 #File Operations
 -create/delete folder
 -create a new file(py, txt, word, pptx, etc)
 -move files to folder
+-switch to drives (eg, switch to E drive)
 
 #Simple Word Games
 -textbased (hangman)
@@ -72,13 +73,3 @@
 
 #Extra features
 -use of opencv for facial recognition
-
-
-
-
-
-
-
-
-t = threading.Thread(target=ob.speak, args=(text,))
-t.start()
