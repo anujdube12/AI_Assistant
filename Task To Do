@@ -7,9 +7,9 @@
 
 #File Operations
 -create/delete folder
--create a new file(py, txt, word, pptx, etc)
+-create/delete a new file(py, txt, word, pptx, etc)
 -move files to folder
--pdf to ppt converter
+-pdf to ppt converter (not important)
 
 
 #Simple Word Games
@@ -33,12 +33,13 @@
 
 #Working with system apps
 -setting alarm and timer
--open paint
+-open paint, notepad, 
 -play music/videos
 -play online video(YouTube)
 
-#Google Search Results
--wikipedia
+#Google Search Results / WebScrapping
+-weather✔
+-wikipedia✔
 -news
 -GK
 -jokes
@@ -46,7 +47,6 @@
 
 #Working with API's
 -calendar
--weather
 -email
 -locations on Google Maps
 
@@ -59,4 +59,3 @@
 
 #Extra features
 -use of opencv for facial recognition
-
