@@ -56,6 +56,8 @@
 
 #Assistant Reply
 -audio effects
+-teaching Assistant to what should he reply for a particular question
 
-#Extra features
--use of opencv for facial recognition
+#Extra features (use of opencv for facial recognition)
+-if the owner comes then, it will wish 
+-if someone other comes then, it will register his/her face and name
