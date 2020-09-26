@@ -1,9 +1,9 @@
 #Performing Math Calculations:
--basic operations(eval)
--square, root
--bitwise(eval)
--binary, decimal, hexadecimal, octal(eval)
--trignometry
+-basic operations(eval)✔
+-power, root✔
+-bitwise(eval)✔
+-binary, decimal, hexadecimal, octal(eval)✔
+-trignometry✔
 
 #File Operations
 -create/delete folder
