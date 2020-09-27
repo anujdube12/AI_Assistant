@@ -24,39 +24,37 @@
 
 #Wishing, Date & Time ✔
 
-#Register our name, DOB
--from next time it will then know your name
-
-#What things he do?
--provides the list of operations
-
-
 #Working with system apps
 -setting alarm and timer
--open paint, notepad, 
+-open paint, notepad, wordpad, calculator✔
 -play music/videos
--play online video(YouTube)
 
 #Google Search Results / WebScrapping
+-play online video(YouTube)✔
 -weather✔
 -wikipedia✔
 -news✔
--GK
+-Covid tracker✔
 -jokes✔
--stories, etc
+-search anything, etc
 
 #Working with API's
 -calendar
 -email
 -locations on Google Maps
 
-
 #working on UI
 -animations and images
+
+#What things he do?
+-provides the list of operations
 
 #Assistant Reply
 -audio effects
 -teaching Assistant to what should he reply for a particular question
+
+#Register our name, DOB
+-from next time it will then know your name
 
 #Extra features (use of opencv for facial recognition)
 -if the owner comes then, it will wish 
