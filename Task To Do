@@ -21,10 +21,12 @@
 #Working With Windows and Tabs
 -switch/close/move/maximize/minimize/screenshot window✔
 -switch/close/new tab✔
+-select all/delete/save/don't save✔
 
 #Wishing, Date & Time ✔
 
 #Working with system apps
+-change wallpaper
 -setting alarm and timer
 -open paint, notepad, wordpad, calculator, system info✔
 -play music/videos
