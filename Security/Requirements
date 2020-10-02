@@ -1,0 +1,7 @@
+pip install opencv-python
+pip install opencv-contrib-python
+
+pip install image
+
+#If some error occured in image, then install this also...
+pip install Pillow==2.2.2
