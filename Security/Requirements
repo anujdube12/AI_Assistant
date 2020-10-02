@@ -5,3 +5,5 @@ pip install image
 
 #If some error occured in image, then install this also...
 pip install Pillow==2.2.2
+
+After above steps, Just Open the SECURITY.py file.
