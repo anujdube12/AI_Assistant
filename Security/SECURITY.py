@@ -1,15 +1,21 @@
 from tkinter import *
 from PIL import Image, ImageTk
-import os
 import cv2
 import numpy as np
+import os
+from os.path import isfile, join
 from threading import Thread
 from userHandler import UserData
 import FACE_UNLOCKER as FU
-import FACE_DATASET_GENERATOR as FG
 
 background, textColor = 'white', 'black'
 face_classifier = cv2.CascadeClassifier('Cascade/haarcascade_frontalface_default.xml')
+
+if os.path.exists('userData')==False:
+	os.mkdir('userData')
+if os.path.exists('userData/faceData')==False:
+	os.mkdir('userData/faceData')
+
 
 ###### ROOT1 ########
 def startLogin():		
@@ -32,6 +38,30 @@ def startLogin():
 		print(e)
 
 ####### ROOT2 ########
+def trainFace():
+	data_path = 'userData/faceData/'
+	onlyfiles = [f for f in os.listdir(data_path) if isfile(join(data_path, f))]
+
+	Training_data = []
+	Labels = []
+
+	for i, files in enumerate(onlyfiles):
+		image_path = data_path + onlyfiles[i]
+		images = cv2.imread(image_path, cv2.IMREAD_GRAYSCALE)
+		
+		Training_data.append(np.asarray(images, dtype=np.uint8))
+		Labels.append(i)
+
+
+	Labels = np.asarray(Labels, dtype=np.int32)
+
+	model = cv2.face.LBPHFaceRecognizer_create()
+	model.train(np.asarray(Training_data), np.asarray(Labels))
+
+	print('Model Trained Successfully !!!')
+	model.save('userData/trainer.yml')
+	print('Model Saved !!!')
+
 def face_extractor(img):
 	gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 	faces = face_classifier.detectMultiScale(gray, 1.3, 5)
@@ -68,7 +98,7 @@ def startCapturing():
 		statusLbl['text'] = '(Face added successfully)'
 		cap.release()
 		cv2.destroyAllWindows()
-		FG.trainFace()
+		trainFace()
 		return
 	
 	frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGBA)
